@@ -31,7 +31,7 @@ export function BettingForm({
   }
 
   return bets ? (
-    <div className="grid grid-cols-3 gap-5 w-full">
+    <div className={`grid grid-cols-${Object.keys(teams).length} gap-5 w-full`}>
       {getObjectEntries(teams).map((team) => (
         <div key={team} className={`text-center flex flex-col justify-aroundh-56 p-2 rounded-lg ${teams[team].color}`}>
           {onWrong ? (
@@ -76,7 +76,7 @@ export function BettingForm({
       ))}
     </div>
   ) : (
-    <form className="grid grid-cols-3 gap-5 w-full" onSubmit={onSubmit}>
+    <form className={`grid grid-cols-${Object.keys(teams).length} gap-5 w-full`} onSubmit={onSubmit}>
       {getObjectEntries(teams).map((team) => (
         <div key={team} className={`text-center flex flex-col justify-aroundh-56 p-2 rounded-lg ${teams[team].color}`}>
           {onWrong ? (
@@ -93,7 +93,7 @@ export function BettingForm({
           ></input>
         </div>
       ))}
-      <button className="text-center bg-white p-4 rounded-sm col-start-2" type="submit">
+      <button className={`text-center bg-white p-4 rounded-md ${Object.keys(teams).length === 4 ? 'col-start-2 col-span-2' : 'col-start-2'}`} type="submit">
         Betta
       </button>
     </form>

@@ -32,7 +32,7 @@ export default function Final() {
       style={{ fontFamily: 'system-ui, sans-serif', lineHeight: '1.4' }}
     >
       <h1 className="font-effect-neon font-rancho text-center w-full text-white text-9xl">Jepperdy</h1>
-      <div className="grid grid-cols-3 gap-5 w-full">
+      <div className={`grid grid-cols-${Object.keys(teams).length} gap-5 w-full`}>
         {getObjectEntries(teams).map((team) => (
           <div
             key={team}

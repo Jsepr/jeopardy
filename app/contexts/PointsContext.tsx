@@ -13,6 +13,10 @@ const initialTeams = {
     color: 'bg-yellow-500',
     points: 0,
   },
+  // 'Team 4': {
+  //   color: 'bg-green-500',
+  //   points: 0,
+  // },
 };
 
 export type Teams = typeof initialTeams;
