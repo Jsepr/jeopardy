@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { pointsColors, pointsText } from '~/utils/style';
 import { playSound } from '~/utils/utils';
 import type { Question } from '~/utils/questions';

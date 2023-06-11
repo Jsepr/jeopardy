@@ -32,11 +32,11 @@ export default function Final() {
       style={{ fontFamily: 'system-ui, sans-serif', lineHeight: '1.4' }}
     >
       <h1 className="font-effect-neon font-rancho text-center w-full text-white text-9xl">Jepperdy</h1>
-      <div className={`grid grid-cols-${Object.keys(teams).length} gap-5 w-full`}>
+      <div className={`flex gap-5 w-full`}>
         {getObjectEntries(teams).map((team) => (
           <div
             key={team}
-            className={`text-center flex flex-col justify-around text-white h-56 p-2 rounded-lg ${teams[team].color}`}
+            className={`text-center flex-1 flex flex-col justify-around text-white h-56 p-2 rounded-lg ${teams[team].color}`}
           >
             <h3 className="text-4xl font-bold">{team}</h3>
             <p className="text-8xl">{teams[team].points}</p>

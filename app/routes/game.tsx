@@ -25,6 +25,10 @@ export default function Index() {
   const { teams } = usePoints();
   const categoriesWithBonus = useLoaderData<typeof loader>() as Category[];
   const [currentCategories, setCurrentCategories] = useState(categoriesWithBonus);
+
+  useEffect(() => {
+    setCurrentCategories(categoriesWithBonus);
+  }, [categoriesWithBonus]);
   const [openQuestionId, setOpenQuestionId] = useState<string | null>(null);
   const openQuestion = currentCategories
     .flatMap((cat) => cat.questions)
@@ -84,11 +88,11 @@ export default function Index() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 6 }}
-            className={`w-full grid grid-cols-${currentCategories.length} gap-4`}
+            className={`w-full flex gap-4`}
           >
             {currentCategories.map((category) => {
               return (
-                <div key={category.category} className="flex flex-col justify-evenly gap-3 h-full">
+                <div key={category.category} className="flex flex-1 flex-col justify-evenly gap-3 h-full">
                   <h2 className="text-center text-white text-3xl break-all">{category.category}</h2>
                   {category.questions.map((question) => {
                     return (
@@ -107,12 +111,12 @@ export default function Index() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 6 }}
-            className={`grid grid-cols-${Object.keys(teams).length} gap-5`}
+            className="flex w-full gap-5"
           >
             {getObjectEntries(teams).map((team) => (
               <div
                 key={team}
-                className={`text-center flex flex-col justify-around text-white h-20 p-2 rounded-lg ${teams[team].color}`}
+                className={`text-center flex flex-1 flex-col justify-around text-white h-20 p-2 rounded-lg ${teams[team].color}`}
               >
                 <h3 className="text-lg font-bold">{team}</h3>
                 <p className="text-4xl">{teams[team].points}</p>

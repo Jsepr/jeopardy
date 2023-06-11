@@ -5,11 +5,11 @@ import { getObjectEntries, playSound } from "~/utils/utils";
 export function Points({points, onRight, onWrong}: {points: number; onRight: () => void; onWrong: () => void;}) {
   const {teams, updatePoints} = usePoints();
   return (
-    <div className={`w-full grid grid-cols-${Object.keys(teams).length} gap-5 flex-grow-0`}>
+    <div className={`w-full flex gap-5 flex-grow-0`}>
       {getObjectEntries(teams).map((team) => (
         <div
           key={team}
-          className={`text-center flex flex-col justify-around text-white h-20 p-2 rounded-lg ${teams[team].color}`}
+          className={`text-center flex-1 flex flex-col justify-around text-white h-20 p-2 rounded-lg ${teams[team].color}`}
         >
           <h3 className="font-bold">{team}</h3>
           <div className="flex flex-row justify-around">
