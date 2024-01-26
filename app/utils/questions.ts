@@ -15,175 +15,157 @@ export type Category = {
 };
 export const categories: Array<Category> = [
   {
-    category: 'What a time to be alive!',
+    category: 'Famous Quotes',
     questions: [
       {
         id: 'category-1-100',
         points: 100,
-        question: 'Veckodag och ikonisk youtube-låt som Rebecca levererade 2011',
+        question: 'Who said the famous quote, "The only way to do great work is to love what you do."?',
       },
       {
         id: 'category-1-200',
         points: 200,
-        question:
-          'Tillstånd av mätthet som uppstår då man ätit för mycket, men också en Göteborgs-duo som äter för mycket',
+        question: 'Finish the quote: "I have a dream that one day..."',
       },
       {
         id: 'category-1-300',
         points: 300,
-        question: 'Youtubes mest visade klipp som kan beskrivas som barnvänlig med catchig sång',
+        question: 'Who said the famous quote, "In the end, it\'s not the years in your life that count. It\'s the life in your years."?',
       },
       {
         id: 'category-1-400',
         points: 400,
-        question: 'Polsk-amerikansk företagsledare som var VD för Youtube från 2014-2023',
+        question: 'Who said the famous quote, "Be yourself; everyone else is already taken."?',
       },
       {
         id: 'category-1-500',
         points: 500,
-        question: 'Datum när Youtubes första klipp "me at the Zoo" lades upp',
+        question: 'Finish the quote: "The greatest glory in living lies not in never falling, but in..."',
       },
     ],
   },
   {
-    category: 'MatGeekLover_93',
+    category: 'World Capitals',
     questions: [
       {
         id: 'category-2-100',
         points: 100,
-        question: 'Ingredienserna som krävs för att göra en tzatziki',
+        question: 'What is the capital of Australia?',
       },
       {
         id: 'category-2-200',
         points: 200,
-        question:
-          'Ett bakverk från 1600-talet, bakad som en tartelett i en oval eller rund bakform. Skalet består av mördeg och fylls med en blandning innehållande mandelmassa och toppas med vit glasyr',
+        question: 'What is the capital of Brazil?',
       },
       {
         id: 'category-2-300',
         points: 300,
-        question:
-          'En wokad rätt med risnudlar som vanligtvis serveras på gatukök i Thailand. Inte riktigt som nr. 14 på Spicy hot, men nästan',
+        question: 'What is the capital of Japan?',
       },
       {
         id: 'category-2-400',
         points: 400,
-        question: 'Antal gram kaffe som behövs i vår kaffemaskin för att göra två ultimata kaffekoppar',
+        question: 'What is the capital of South Africa?',
       },
       {
         id: 'category-2-500',
         points: 500,
-        question:
-          'Italiensk term för finhackad lök, morot och selleri som steks i låg temperatur och är grunden för många italienska rätter',
+        question: 'What is the capital of Sweden?',
       },
     ],
   },
   {
-    category: "I'm sexy and I know IT",
+    category: 'Science and Technology',
     questions: [
       {
         id: 'category-3-100',
         points: 100,
-        question: 'Förkortning som denna symbol representerar',
-        img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/USB_icon.svg/2560px-USB_icon.svg.png',
+        question: 'What does DNA stand for?',
       },
       {
         id: 'category-3-200',
         points: 200,
-        question:
-          'Högnivå, klassbaserat, objektorienterat programmeringsspråk som är designat för att ha så få implementeringsberoenden som möjligt',
+        question: 'What is the chemical symbol for the element with the atomic number 1?',
       },
       {
         id: 'category-3-300',
         points: 300,
-        question:
-          'Dataspel som är fyllt med uppslukande magi som sätter spelaren i centrum för deras äventyr för att bli den häxa eller trollkarl de väljer att vara',
+        question: 'What is the largest planet in our solar system?',
       },
       {
         id: 'category-3-400',
         points: 400,
-        question: 'Domännamnet som kommer från landet Niue i Stilla havet och som ägs av Internetstiftelsen i Sverige',
+        question: 'What is the process of converting a liquid into a gas called?',
       },
       {
         id: 'category-3-500',
         points: 500,
-        question: 'Det kan beräknas med denna funktion',
-        code: `
-function giveAnswerToQuestion() {
-  let x = 0;
-  for (let i = 0; i < 60; i++) {
-    if (i % 2) {
-      x = x + 1;
-    }
-  }
-  return x;
-}
-`,
+        question: 'What is the unit of electric current?',
       },
     ],
   },
   {
-    category: 'David Kringlund',
+    category: 'Famous Paintings',
+    questions: [
+      {
+        id: 'category-4-100',
+        points: 100,
+        question: 'Which artist painted the Mona Lisa?',
+      },
+      {
+        id: 'category-4-200',
+        points: 200,
+        question: 'Which painting features a melting clock?',
+      },
+      {
+        id: 'category-4-300',
+        points: 300,
+        question: 'Which artist painted The Starry Night?',
+      },
+      {
+        id: 'category-4-400',
+        points: 400,
+        question: 'Which painting is often referred to as the "Sistine Chapel of America"?',
+      },
+      {
+        id: 'category-4-500',
+        points: 500,
+        question: 'Which artist painted The Persistence of Memory?',
+      },
+    ],
+  },
+  {
+    category: 'Sports Trivia',
     questions: [
       {
         id: 'category-5-100',
         points: 100,
-        question: 'En behållare som man brukar skaka drinkar i',
+        question: 'Which country won the FIFA World Cup in 2018?',
       },
       {
         id: 'category-5-200',
         points: 200,
-        question: 'Citrusfrukt som ofta används som dekoration i en ordentligt gjord negroni',
+        question: 'In which sport would you perform a "slam dunk"?',
       },
       {
         id: 'category-5-300',
         points: 300,
-        question: 'Sprisorterna som används i drinken Long Island iced tea',
+        question: 'Who holds the record for the most home runs in Major League Baseball?',
       },
       {
         id: 'category-5-400',
         points: 400,
-        question: 'En drink som består av whiskey, söt vermouth och bitter',
+        question: 'Which country has won the most Olympic gold medals?',
       },
       {
         id: 'category-5-500',
         points: 500,
-        question: 'Världskänd cocktailbar som startade i Chicago USA och som Jesper besökte i New York',
-      },
-    ],
-  },
-  {
-    category: 'Fuck Aina',
-    questions: [
-      {
-        id: 'category-6-100',
-        points: 100,
-        question: 'Staden som Maja växte upp i',
-      },
-      {
-        id: 'category-6-200',
-        points: 200,
-        question: 'Majas favoritdrink som består av citronjuice, sockerlag, sodavatten och gin',
-      },
-      {
-        id: 'category-6-300',
-        points: 300,
-        question:
-          'Stygn som broderas i två steg, först ett högerlagt stygn som sedan broderas över med ett vänsterlagt stygn',
-      },
-      {
-        id: 'category-6-400',
-        points: 400,
-        question: 'Majas mellannamn',
-      },
-      {
-        id: 'category-6-500',
-        points: 500,
-        question: 'Programmet som Majas pappa vad domare i där vår käre Adam Alsing var programledare',
+        question: 'Who is the all-time leading scorer in NBA history?',
       },
     ],
   },
 ];
+
 
 function getRandomInt(max: number) {
   return Math.floor(Math.random() * max);

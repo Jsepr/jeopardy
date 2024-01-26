@@ -29,7 +29,7 @@ export function Points({points, onRight, onWrong}: {points: number; onRight: () 
               type="button"
               className="w-10 h-10 bg-white flex justify-center items-center rounded-full"
               onClick={() => {
-                updatePoints(team, -points);
+                // updatePoints(team, -points);
                 playSound('wronganswer.mp3');
 
                 onWrong();
